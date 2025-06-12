@@ -7,12 +7,6 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #1a1a1a, #2d2d1f);
-      color: #e0ffe0;
-      transition: background 1s ease;
-    }
 
     header {
       padding: 40px;
@@ -90,7 +84,7 @@
 <body>
   <header>
     <h1>🌿 Soulroot Legacy</h1>
-    <p>Welcome to the official development hub</p>
+    <p><i>Welcome to the official development hub</i></p>
   </header>
 
   <div class="progress-section">
@@ -102,16 +96,16 @@
     </div>
 
     <div class="progress-container">
-      <div class="label">Story: 3%</div>
+      <div class="label">Story: (3%)</div>
       <div class="bar">
         <div class="bar-fill story" style="width: 3%">3%</div>
       </div>
     </div>
 
     <div class="progress-container">
-      <div class="label">Coding: 0.3%</div>
+      <div class="label">Coding: (1%)</div>
       <div class="bar">
-        <div class="bar-fill code" style="width: 0.3%">0.3%</div>
+        <div class="bar-fill code" style="width: 1%">1%</div>
       </div>
     </div>
   </div>
@@ -132,9 +126,9 @@
     <div class="co-devs">
   <h3>Co-Devs 💚</h3>
   <ol>
-    <li><span class="gradient-text">Moonlight ✨</span> - Story and Lore lead</li>
-    <li><span class="gradient-text">Luminous 🌊</span> - Programing and Creative Director</li>
-    <li><span class="gradient-text">Zwendrex 🥊</span> - World building and Combat lead</li>
+    <li><span class="gradient-text">Moonlight ✨</span> - <i>Story and Lore lead</i></li>
+    <li><span class="gradient-text">Luminous 🌊</span> - <i>Programing and Creative Director</i></li>
+    <li><span class="gradient-text">Zwendrex 🥊</span> - <i>World building and Combat lead</i></li>
   </ol>
     </div>
     
@@ -142,23 +136,5 @@
     <p>&copy; 2024 Luminous, Moonlight, Zwedrex. All rights reserved.</p>
     <p>Contact: galaxyvoid490@gmail.com</p>
   </footer>
-
-  <script>
-    // Smooth background transition as you scroll to simulate cave entrance
-    window.addEventListener('scroll', () => {
-      const scrollTop = window.scrollY;
-      const maxScroll = document.body.scrollHeight - window.innerHeight;
-      const percent = scrollTop / maxScroll;
-
-      const topColor = [26, 26, 26]; // greenish black
-      const bottomColor = [60, 16, 0]; // lava warm
-
-      const r = topColor[0] + percent * (bottomColor[0] - topColor[0]);
-      const g = topColor[1] + percent * (bottomColor[1] - topColor[1]);
-      const b = topColor[2] + percent * (bottomColor[2] - topColor[2]);
-
-      document.body.style.background = `rgb(${r}, ${g}, ${b})`;
-    });
-  </script>
 </body>
 </html>
