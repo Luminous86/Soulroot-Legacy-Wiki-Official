@@ -1,34 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soulroot Legacy Wiki</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-      body {
-        background: #1a1a1a;
-        color: #e0ffe0;
-        font-family: 'Courier New', monospace;
-        text-align: center;
-        padding: 50px;
-      }
-      h1 {
-        font-size: 3em;
-        color: #84ff8c;
-        text-shadow: 0 0 5px #4caf50;
-      }
-      p {
-        max-width: 600px;
-        margin: auto;
-        font-size: 1.2em;
-        line-height: 1.6;
-        color: #ccc;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>🌿 Soulroot Legacy Wiki</h1>
-    <p>Welcome to the official home of the Soulroot Legacy project — a story-rich farming-fantasy adventure blooming with lore, life, and legacy.</p>
-  </body>
+  <title>Soulroot Legacy</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #1a1a1a, #2d2d1f);
+      color: #e0ffe0;
+      transition: background 1s ease;
+    }
+
+    header {
+      padding: 40px;
+      text-align: center;
+      background-color: #263d2f;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #84ff8c;
+    }
+
+    .progress-section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .progress-container {
+      margin-bottom: 20px;
+    }
+
+    .label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .bar {
+      height: 25px;
+      background: #444;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      line-height: 25px;
+      color: #fff;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .art { background-color: #4caf50; }
+    .story { background-color: #2196f3; }
+    .code { background-color: #ff9800; }
+
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    footer {
+      padding: 30px;
+      background-color: #1a1a1a;
+      color: #ccc;
+      text-align: center;
+    }
+
+    .co-devs {
+      margin-top: 40px;
+      background-color: #2c2c2c;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌿 Soulroot Legacy</h1>
+    <p>Welcome to the official development hub</p>
+  </header>
+
+  <div class="progress-section">
+    <div class="progress-container">
+      <div class="label">Art: 23 / 300 (11%)</div>
+      <div class="bar">
+        <div class="bar-fill art" style="width: 11%">11%</div>
+      </div>
+    </div>
+
+    <div class="progress-container">
+      <div class="label">Story: 43%</div>
+      <div class="bar">
+        <div class="bar-fill story" style="width: 43%">43%</div>
+      </div>
+    </div>
+
+    <div class="progress-container">
+      <div class="label">Coding: 10%</div>
+      <div class="bar">
+        <div class="bar-fill code" style="width: 10%">10%</div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <h2>About Soulroot Legacy</h2>
+    <p>Soulroot Legacy is a magical farming RPG where the past and present collide beneath your soil. Venture through a world where roots whisper secrets, spirits live in crops, and seasons carry the weight of forgotten tales.</p>
+
+    <h2>Development Timeline</h2>
+    <ul>
+      <li>2024 - Concept and design begins 🌱</li>
+      <li>2025 - 5 playable prototypes</li>
+      <li>2026 - Alpha release planned</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div class="co-devs">
+      <h3>Co-Devs 💚</h3>
+      <p>Special thanks to everyone contributing ideas, code, music, and creativity to Soulroot Legacy. You're planting greatness.</p>
+    </div>
+
+    <p>&copy; 2024 Luminous. All rights reserved.</p>
+    <p>Contact: luminous86@example.com | Follow: @SoulrootLegacy</p>
+  </footer>
+
+  <script>
+    // Smooth background transition as you scroll to simulate cave entrance
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const maxScroll = document.body.scrollHeight - window.innerHeight;
+      const percent = scrollTop / maxScroll;
+
+      const topColor = [26, 26, 26]; // greenish black
+      const bottomColor = [60, 16, 0]; // lava warm
+
+      const r = topColor[0] + percent * (bottomColor[0] - topColor[0]);
+      const g = topColor[1] + percent * (bottomColor[1] - topColor[1]);
+      const b = topColor[2] + percent * (bottomColor[2] - topColor[2]);
+
+      document.body.style.background = `rgb(${r}, ${g}, ${b})`;
+    });
+  </script>
+</body>
 </html>
