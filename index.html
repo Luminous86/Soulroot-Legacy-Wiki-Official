@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,134 +6,151 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body {
+      background-color: #1e1e2f;
+      color: #ddd;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }header {
+  padding: 40px;
+  text-align: center;
+  background-color: #263d2f;
+  border-bottom: 2px solid #444;
+}
 
-    header {
-      padding: 40px;
-      text-align: center;
-      background-color: #263d2f;
-    }
+header h1 {
+  font-size: 3em;
+  color: #84ff8c;
+  margin: 0;
+}
 
-    header h1 {
-      font-size: 3em;
-      color: #84ff8c;
-    }
+header p {
+  margin: 10px 0 0;
+  font-style: italic;
+  color: #aaa;
+}
 
-    .progress-section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-    }
+.progress-section, section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
 
-    .progress-container {
-      margin-bottom: 20px;
-    }
+.progress-container {
+  margin-bottom: 20px;
+}
 
-    .label {
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
+.label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ccc;
+}
 
-    .bar {
-      height: 25px;
-      background: #444;
-      border-radius: 20px;
-      overflow: hidden;
-    }
+.bar {
+  height: 25px;
+  background: #333;
+  border-radius: 20px;
+  overflow: hidden;
+}
 
-    .bar-fill {
-      height: 100%;
-      line-height: 25px;
-      color: #fff;
-      text-align: center;
-      white-space: nowrap;
-    }
+.bar-fill {
+  height: 100%;
+  line-height: 25px;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+}
 
-    .art { background-color: #4caf50; }
-    .story { background-color: #2196f3; }
-    .code { background-color: #ff9800; }
+.art { background-color: #4caf50; }
+.story { background-color: #2196f3; }
+.code { background-color: #ff9800; }
 
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-    }
+h2 {
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+  margin-top: 40px;
+  color: #84ff8c;
+}
 
-    footer {
-      padding: 30px;
-      background-color: #1a1a1a;
-      color: #ccc;
-      text-align: center;
-    }
+ul li {
+  margin: 10px 0;
+}
 
-    .co-devs {
-      margin-top: 40px;
-      background-color: #2c2c2c;
-      padding: 20px;
-      border-radius: 10px;
+footer {
+  padding: 30px;
+  background-color: #151515;
+  color: #bbb;
+  text-align: center;
+}
 
-      .gradient-text {
+.co-devs {
+  margin-top: 40px;
+  background-color: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.gradient-text {
   background: linear-gradient(to right, #ff69b4, #33ccff, #66ff00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-      }
-      
-    }
+}
+
   </style>
+  <script>
+    // Basic password protection (not secure but useful for casual access control)
+    const allowed = [$Moon120_:*45?u=×~V£^Dm-C', 'devmode456']; // Set your password(s) here
+    const input = prompt("Enter password to access the site:");
+    if (!allowed.includes(input)) {
+      document.body.innerHTML = '<h1 style="color:red;text-align:center;margin-top:20%;">Access Denied</h1>';
+      throw new Error("Unauthorized access");
+    }
+  </script>
 </head>
 <body>
   <header>
     <h1>🌿 Soulroot Legacy</h1>
     <p><i>Welcome to the official development hub</i></p>
-  </header>
-
-  <div class="progress-section">
+  </header>  <div class="progress-section">
     <div class="progress-container">
       <div class="label">Art: 2 / 300 (1%)</div>
       <div class="bar">
         <div class="bar-fill art" style="width: 1%">1%</div>
       </div>
-    </div>
-
-    <div class="progress-container">
-      <div class="label">Story: (3%)</div>
-      <div class="bar">
-        <div class="bar-fill story" style="width: 3%">3%</div>
-      </div>
-    </div>
-
-    <div class="progress-container">
-      <div class="label">Coding: (1%)</div>
-      <div class="bar">
-        <div class="bar-fill code" style="width: 1%">1%</div>
-      </div>
-    </div>
+    </div><div class="progress-container">
+  <div class="label">Story: (3%)</div>
+  <div class="bar">
+    <div class="bar-fill story" style="width: 3%">3%</div>
   </div>
+</div>
 
-  <section>
+<div class="progress-container">
+  <div class="label">Coding: (1%)</div>
+  <div class="bar">
+    <div class="bar-fill code" style="width: 1%">1%</div>
+  </div>
+</div>
+
+  </div>  <section>
     <h2>About Soulroot Legacy</h2>
-    <p><b>Soulroot Legacy</b> is a pixel survival , action, casual adventure sandbox game, were one can explore different biomes, fight enemies, uncover hidden truth , make friends, farming, fishing. There are different types of classes that can lead to game progression. The game fits different play style wether you just want to enjoy the Scenery and do farming or fishing. Or you want to make friends with NPC and have your own family, or you want to become a hero or villain. The Game doesn't force you on a single Path and it doesn't really have a Single storyline, each person you meet has their own story. This ensures the game will be unique to everyone who plays it every time they play.</p>
+    <p><b>Soulroot Legacy</b> is a pixel survival, action, casual adventure sandbox game where one can explore different biomes, fight enemies, uncover hidden truths, make friends, farm, and fish. The game fits different play styles whether you just want to enjoy the scenery or become a hero—or villain. There is no single storyline, and every NPC has their own path, ensuring each playthrough feels unique.</p><h2>Development Timeline</h2>
+<ul>
+  <li>2023 - Concept and design began 🌱</li>
+  <li>2025 - Planning to deploy 5 prototypes</li>
+  <li>2026 - Possible Alpha version release</li>
+</ul>
 
-    <h2>Development Timeline</h2>
-    <ul>
-      <li>2023 - Concept and design began 🌱</li>
-      <li>2025 - Plannig to deploy 5 prototypes.</li>
-      <li>2026 - Possible Alpha version release planned</li>
-    </ul>
-  </section>
-
-  <footer>
+  </section>  <footer>
     <div class="co-devs">
-  <h3>Co-Devs 💚</h3>
-  <ol>
-    <li><span class="gradient-text">Moonlight ✨</span> - <i>Story and Lore lead</i></li>
-    <li><span class="gradient-text">Luminous 🌊</span> - <i>Programing and Creative Director</i></li>
-    <li><span class="gradient-text">Zwendrex 🥊</span> - <i>World building and Combat lead</i></li>
-  </ol>
+      <h3>Co-Devs 💚</h3>
+      <ol>
+        <li><span class="gradient-text">Moonlight ✨</span> - <i>Story and Lore lead</i></li>
+        <li><span class="gradient-text">Luminous 🌊</span> - <i>Programming and Creative Director</i></li>
+        <li><span class="gradient-text">Zwendrex 🥊</span> - <i>World building and Combat lead</i></li>
+      </ol>
     </div>
-    
-
-    <p>&copy; 2024 Luminous, Moonlight, Zwedrex. All rights reserved.</p>
+    <p>&copy; 2024 Luminous, Moonlight, Zwendrex. All rights reserved.</p>
     <p>Contact: galaxyvoid490@gmail.com</p>
   </footer>
 </body>
-</html>
+  </html>
