@@ -2,27 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     </head>
     <body>
         <Header>
             <h1>Soulroot-Legacy</h1>
         </Header>
+
+  <input type="password" id="passwordInput" placeholder="Enter password">
+  <button onclick="checkPassword()">Submit</button>
+
+  <div id="content" style="display:none;">
+    <h1>Access Granted</h1>
+    <p>Welcome to the site.</p>
+  </div>
+
+  <script>
+    const correctPassword = "Soulroot-Legacy"; // change this to your chosen password
+
+    function checkPassword() {
+      const input = document.getElementById("passwordInput").value;
+      if (input === correctPassword) {
+        document.getElementById("content").style.display = "block";
+      } else {
+        alert("Incorrect password.");
+      }
+    }
+  </script>
+
+</body>
+</html>
+        
         <main>
-            <p><i><b>Soulroot-Legacy</b> is a pixel survival , action, casual adventure sandbox game, were one can explore different biomes, fight enemies, uncover hidden truth , make friends, farming, fishing.<br />There are different types of classes that can lead to game progression. The game fits different play style wether you just want to enjoy the Scenery and do farming or fishing,or you want to make friends with NPC and have your own family, or you want to become a hero or villain.<br /> The Game doesn't force you on a single Path and it doesn't really have a Single storyline, each person you meet has their own story.<br /> This ensures the game will be unique to everyone who plays it every time they play.</i></p>
+                <p><i><b>Soulroot-Legacy</b> is a pixel survival , action, casual adventure sandbox game, were one can explore different biomes, fight enemies, uncover hidden truth , make friends, farming, fishing.<br />There are different types of classes that can lead to game progression. The game fits different play style wether you just want to enjoy the Scenery and do farming or fishing,or you want to make friends with NPC and have your own family, or you want to become a hero or villain.<br /> The Game doesn't force you on a single Path and it doesn't really have a Single storyline, each person you meet has their own story.<br /> This ensures the game will be unique to everyone who plays it every time they play.</i></p>
             
             <h2>Development Progress</h2>
-            <ul>Art = 1%</ul>
-            <ul>Story = 3%</ul>
-            <ul>Code = 1%</ul>
+            <ol>Art = 1%</ol>
+            <ol>Story = 3%</ol>
+            <ol>Code = 1%</ol>
             
             <h3>Devs</h3>
-          <ol>
             <li>Moonlight</li>
             <li>Lumminous</li>
             <li>Zwendrex</li>
-          </ol>
         </main>
     </body>
-</html>
+    </html>
+    
